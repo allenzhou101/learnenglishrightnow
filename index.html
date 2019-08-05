@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+  <link href = "main.css" rel = "stylesheet" type = "text/css">
+</head>
 <body>
-  <p>Hey Vivian, this is where files for lessons will be uploaded. I just made this website today (8/4/19) so it is very simple.</p>
-  <h5>Click the following for the homework:</h5>
-  <a href = "Day_3.docx">Day 3 Homework and Lesson Plan</a>
-  <h5>Games</h5>
-  <a href = "http://www.eflnet.com/vocab/dictionary/furniturememorygame.php">Furniture Matching Game</a>
+  <h1 class = "title">
+    <div class = "left">Learn English</div>
+    <div class = "right">Right Now</div>
+  </h1>
+  <div class = "content">
+    <h2>Vivian's Schedule</h2>
+    <div class = "day-plan">
+      <h3>Day 1 (8/5)</h3>
+      <h4 class = "lesson-summary">
+        Lesson Summary
+        <p>
+          Record an episode of "My Weird School."
+          This will involve drawing and speaking.
+          Play Charades with House Appliances.
+        </p>
+      </h4>
+      <h4 class = "homework">
+        Homework
+        <p>
+          Required homework: Learn about cooking. This includes house appliances and foods.
+          Understand the following words: taste (sweet, sour, salty, etc.),
+          ingredients (salt, pepper, chicken, spinach, etc.),
+          cooking equipment (blender, pan, pot, fork, knife, etc.).
+          <br>
+          The reason I say "etc." is because I have listed the required words to learn for
+          homework but if the student is interested and has time, they may learn more.
+          <br><br>
+          Just for fun homework: Using home appliances. Use a blender to make a smoothie.
+          Here is a recipe I enjoy:
+          <a target = "none" href = "https://www.tasteandtellblog.com/cookbook-of-the-month-review-may-2008/">
+          https://www.tasteandtellblog.com/cookbook-of-the-month-review-may-2008/</a>
+        </p>
+      </h4>
+    </div>
+
+    <div class = "day-plan">
+      <h3>Day 2 (8/6)</h3>
+      <h4 class = "lesson-summary">
+        Lesson Summary
+        <p>
+          List one food for every letter of the alphabet. TBD
+        </p>
+      </h4>
+      <h4 class = "homework">
+        Homework
+        <p>
+          Read chapter 5 of "My Weird School."
+        </p>
+      </h4>
+    </div>
+    <div class = "day-plan">
+      <h3>Day 3 (8/7)</h3>
+      <h4 class = "lesson-summary">
+        Lesson Summary
+        <p>
+          Film an episode of "My Weird School." TBD
+        </p>
+      </h4>
+      <h4 class = "homework">
+        Homework
+        <p>
+          TBD
+        </p>
+      </h4>
+    </div>
+
+    <div class = "day-plan">
+      <h3>Day 4 (8/8)</h3>
+      <h4 class = "lesson-summary">
+        Lesson Summary
+        <p>
+          TBD
+        </p>
+      </h4>
+      <h4 class = "homework">
+        Homework
+        <p>
+          Read chapter 6 of "My Weird School."
+        </p>
+      </h4>
+    </div>
+
+  </div>
+
+  <div class = "games">
+    <h2>Games</h2>
+    <a href = "http://www.eflnet.com/vocab/dictionary/furniturememorygame.php">Furniture Matching Game</a>
+  </div>
+
 </body>
-</html? 
+<script>
+  document.addEventListener("scroll", function() {
+    var rightTitle = document.querySelector(".right");
+    var x = window.scrollY/6;
+    var x2 = (window.scrollY - rightTitle.offsetTop)/6;
+    document.querySelector(".left").style.transform = "translateX(" + x + "px)";
+    rightTitle.style.transform = "translateX(-" + x + "px)";
+
+  });
+</script>
+</html>

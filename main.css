@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  height: 200vh;
+  background: white;
+  font-family: serif;
+}
+p {
+  font-weight: normal;
+}
+h2 {
+  margin: 0;
+}
+.title {
+  font-size: 14vw;
+  font-weight: lighter;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10vh;
+  margin-top: 0;
+  background: #ffddc7;
+  margin-bottom: 5vh;
+  /* text-shadow: 0px 0px 5px black; */
+  /* color: white; */
+}
+.title .left {
+  text-align: left;
+  /* display: inline-block; */
+}
+.title .right {
+  text-align: right;
+  /* display: inline-block; */
+}
+.content {
+  width: 90%;
+  margin: auto;
+}
+.day-plan {
+  vertical-align: top;
+  width: 30%;
+  display: inline-block;
+}
+.lesson-summary {
+
+}
+.homework {
+
+}
+
+.games {
+  margin: auto;
+  width: 90%;
+}
