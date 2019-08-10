@@ -10,6 +10,9 @@ p {
 h2 {
   margin: 0;
 }
+ul {
+  font-weight: normal;
+}
 .title {
   font-size: 14vw;
   font-weight: lighter;
