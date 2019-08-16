@@ -126,15 +126,20 @@ ul {
   color: gray;
   width: 15px;
   height: 15px;
+  filter: blur(2px);
   border-radius: 50%;
   position: absolute;
   z-index: -1;
   animation: fade 3s forwards;
 }
 @Keyframes fade {
+  50% {
+    background: orange;
+  }
   100% {
     opacity: 0;
     display: none;
+    transform: scale(2);
   }
 }
 .drawContainer {

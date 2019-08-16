@@ -2,10 +2,13 @@
 <html>
 <head>
   <link href = "main.css" rel = "stylesheet" type = "text/css">
+  <link href = "nav.css" rel = "stylesheet" type = "text/css">
+
 </head>
 <body>
   <div class = "nav">
-
+    <a class = "index" href = "index.html">home</a>
+    <a href = "videos.html">videos</a>
   </div>
   <h1 class = "title">
     <div class = "left">Learn English</div>
@@ -194,8 +197,7 @@
         <h4 class = "lesson-summary">
           Lesson Summary
           <p>
-            Play Charades with summer activities. Draw summer activities.
-            Discuss summer activities you have enjoyed.
+            Read a book (ex. Cinderella). Visit a bookstore (Barnes & Noble).
           </p>
         </h4>
         <h4 class = "homework">
@@ -219,7 +221,7 @@
         <h4 class = "lesson-summary">
           Lesson Summary
           <p>
-            Make your speech. Draw my life. Play word scramble. Learn a tongue twister. Tell a story.
+            Learn a tongue twister. Play charades with summer activities.
           </p>
         </h4>
         <h4 class = "homework">
@@ -242,6 +244,7 @@
         <h4 class = "lesson-summary">
           Lesson Summary
           <p>
+            Play word scramble. Write a tongue twister. Tell a story.
             Simon Says. Draw Miss Daisy's life. 20 Questions with character traits.
           </p>
         </h4>
@@ -377,10 +380,10 @@
     if (i >= alphabet.length) {
       i -= 26;
     }
-    div.innerHTML = alphabet[i] + "";
+    // div.innerHTML = alphabet[i] + "";
     i++;
     console.log(i);
-    document.querySelector(".drawContainer").appendChild(div);
+    // document.querySelector(".drawContainer").appendChild(div);
 
 
   });

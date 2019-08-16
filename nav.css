@@ -1,0 +1,6 @@
+.nav {
+  position: fixed;
+  top: 3vh;
+  left: 2vw;
+  z-index: 3;
+}
